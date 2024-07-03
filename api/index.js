@@ -141,8 +141,6 @@ app.get("/post", async (req, res) => {
 
 app.get("/post/:id", async (req, res) => {
   const { id } = req.params;
-  // Check if id is a valid ObjectId
-  if (!mongoose.isValidObjectId(id)) {
-    return res.status(400).json({ message: id });
-  }
+  const postDoc = await Post.findById(id).populate("author", ["firstname"]);
+  res.json(postDoc);
 });

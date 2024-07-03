@@ -27,7 +27,6 @@ export default function CreatePost() {
     });
     if (response.ok) {
       setRedirect(true);
-      console.log("created post");
     } else {
       alert("Invalid ");
       console.log("cannot post");

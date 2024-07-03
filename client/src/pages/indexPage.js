@@ -17,6 +17,7 @@ export default function IndexPage() {
         posts.map((post) => (
           <Post
             key={post._id}
+            _id={post._id}
             title={post.title}
             summary={post.summary}
             cover={post.cover}
