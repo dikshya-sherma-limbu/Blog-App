@@ -1,4 +1,12 @@
 {
+  "name": "blog-app",
+  "version": "1.0.0",
+  "description": "Your project description",
+  "main": "index.js",
+  "scripts": {
+    "start": "node App.js",  
+    "dev": "nodemon server.js"  
+  },
   "dependencies": {
     "bcrypt": "^5.1.1",
     "bcryptjs": "^2.4.3",
@@ -10,5 +18,7 @@
     "multer": "^1.4.5-lts.1",
     "nodemon": "^3.1.4",
     "react-router-dom": "^6.23.1"
-  }
+  },
+   "license": "ISC"
+
 }
