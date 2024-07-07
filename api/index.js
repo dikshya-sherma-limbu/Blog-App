@@ -97,7 +97,7 @@ app.get("/profile", (req, res) => {
     if (err) throw err;
     res.json(info);
   });
-  res.json(req.cookies);
+  // res.json(req.cookies);
 });
 
 // //logout endpoint
